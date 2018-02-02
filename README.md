@@ -53,7 +53,8 @@ $pdo_factory = $dic['PDO.Factory'];
 
 // Create handler
 $pdo = $pdo_factory( $db );
-$pdo = $pdo_factory( (object) $db );
+$pdo = $pdo_factory( (object) $db ); // StdClass objects
+$pdo = $pdo_factory( new \ArrayObject($db) ); // ArrayAccess instance
 ```
 
 #### Exceptions
