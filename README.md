@@ -1,6 +1,13 @@
 # Germania KG · Databases
 
-[Pimple Service Provider](https://pimple.symfony.com/#extending-a-container) for creating [PDO handlers.](http://php.net/manual/en/pdo.construct.php)
+**[Pimple Service Provider](https://pimple.symfony.com/#extending-a-container) for creating [PDO handlers.](http://php.net/manual/en/pdo.construct.php)**
+
+
+[![Build Status](https://travis-ci.org/GermaniaKG/Databases.svg?branch=master)](https://travis-ci.org/GermaniaKG/Databases)
+[![Code Coverage](https://scrutinizer-ci.com/g/GermaniaKG/Databases/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/Databases/?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/GermaniaKG/Databases/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/Databases/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/GermaniaKG/Databases/badges/build.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/Databases/build-status/master)
+
 
 ## Installation
 
