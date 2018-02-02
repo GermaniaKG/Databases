@@ -18,10 +18,10 @@
 	</filter>
 
 	<php>
-		<var name="DB_DSN"    value="any_database_dsn" />
-		<var name="DB_USER"   value="username" />
-		<var name="DB_PASSWD" value="topsecret" />
-		<var name="DB_DBNAME" value="database_name" />
+		<var name="DB_DSN"    value="mysql:host=localhost;dbname=test;charset=utf8" />
+		<var name="DB_USER"   value="root" />
+		<var name="DB_PASSWD" value="" />
+		<var name="DB_DBNAME" value="test" />
 	</php>
 
 	<logging>
