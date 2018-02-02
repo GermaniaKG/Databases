@@ -1,0 +1,32 @@
+{
+	"name": "germania/databases",
+
+	"license": "proprietary",
+	"authors": [
+		{
+			"name": "Carsten Witt",
+			"email": "carstenwitt@germania-kg.de",
+			"role": "Developer"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Germania\\Databases\\": "src/"
+		}
+	},
+
+  "autoload-dev": {
+      "psr-4": { "tests\\": "tests/src" }
+  },
+
+	"require": {
+		"pimple/pimple": "^3.0"
+	},
+
+	"require-dev": {
+		"satooshi/php-coveralls": "^1.0",
+ 		"phpunit/dbunit": "^1.2",
+		"phpunit/phpunit": "^5.7|^6.0"
+
+	}
+}

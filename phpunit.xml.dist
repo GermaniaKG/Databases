@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit colors="true"
+				 stopOnFailure="true"
+				 syntaxCheck="true"
+				 bootstrap="tests/bootstrap.php">
+
+	<testsuites>
+		<testsuite name="Test Suite">
+			<directory>tests/src</directory>
+		</testsuite>
+	</testsuites>
+
+	<filter>
+		<whitelist processUncoveredFilesFromWhitelist="true">
+			<directory>src</directory>
+		</whitelist>
+	</filter>
+
+	<php>
+		<var name="DB_DSN"    value="any_database_dsn" />
+		<var name="DB_USER"   value="username" />
+		<var name="DB_PASSWD" value="topsecret" />
+		<var name="DB_DBNAME" value="database_name" />
+	</php>
+
+	<logging>
+		<log type="coverage-clover" target="build/logs/clover.xml"/>
+		<log type="coverage-html"   target="build/logs/html/"/>
+		<log type="testdox-html"    target="build/logs/testdox.html"/>
+		<log type="coverage-text"   target="php://stdout" showUncoveredFiles="true" />
+	</logging>
+
+</phpunit>
