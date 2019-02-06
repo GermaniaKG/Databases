@@ -5,19 +5,8 @@ php:
   - "5.6"
   - "7.0"
   - "7.1"
-  - hhvm
-
-
-# -- Begin MySQL support --------------------------
-
-services:
-  - mysql
-
-before_install:
-  - mysql -e 'CREATE DATABASE IF NOT EXISTS test;'
-
-# -- End MySQL support ----------------------------
-
+  - "7.2"
+  - "7.3"
 
 env:
 
