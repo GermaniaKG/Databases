@@ -5,7 +5,7 @@ use Germania\Databases\DatabasesServiceProvider;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 
-class DatabasesServiceProviderTest extends \PHPUnit_Framework_TestCase
+class DatabasesServiceProviderTest extends \PHPUnit\Framework\TestCase
 {
 
     /**

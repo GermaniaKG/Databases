@@ -3,13 +3,16 @@
 **[Pimple Service Provider](https://pimple.symfony.com/#extending-a-container) for creating [PDO handlers.](http://php.net/manual/en/pdo.construct.php)**
 
 
-[![Build Status](https://travis-ci.org/GermaniaKG/Databases.svg?branch=master)](https://travis-ci.org/GermaniaKG/Databases)
-[![Code Coverage](https://scrutinizer-ci.com/g/GermaniaKG/Databases/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/Databases/?branch=master)
+[![Packagist](https://img.shields.io/packagist/v/germania-kg/databases.svg?style=flat)](https://packagist.org/packages/germania-kg/databases)
+[![PHP version](https://img.shields.io/packagist/php-v/germania-kg/databases.svg)](https://packagist.org/packages/germania-kg/databases)
+[![Build Status](https://img.shields.io/travis/GermaniaKG/Databases.svg?label=Travis%20CI)](https://travis-ci.org/GermaniaKG/Databases)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/GermaniaKG/Databases/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/Databases/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/GermaniaKG/Databases/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/Databases/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/GermaniaKG/Databases/badges/build.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/Databases/build-status/master)
 
 
-## Installation
+
+## Installation with Composer
 
 ```bash
 $ composer require germania-kg/databases
@@ -91,13 +94,22 @@ $dic->extend('PDO.Options', function($default_options, $dic) {
 
 ```
 
+## Development
+
+```bash
+$ git clone https://github.com/GermaniaKG/Databases.git
+$ cd Databases
+$ composer install
+```
 
 ## Unit tests
 
-Either copy `phpunit.xml.dist` to `phpunit.xml` and adapt to your needs, or leave as is. 
-Run [PhpUnit](https://phpunit.de/) like this:
+Either copy `phpunit.xml.dist` to `phpunit.xml` and adapt to your needs, or leave as is. Run [PhpUnit](https://phpunit.de/) test or composer scripts like this:
 
 ```bash
+$ composer test
+# or
 $ vendor/bin/phpunit
 ```
+
 
